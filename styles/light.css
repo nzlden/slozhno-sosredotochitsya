@@ -3,10 +3,57 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme_light {
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --page-background: #FFF1F7;
+        --text-color: #353430;
+
+        --accent-color: #353430;
+        /*//#FF8DCB;*/
+
+
+        --accent-text-color: #353430;
+
+        --decoration-color: #FFC2E6;
+
+        --button-border-hover: rgba(255, 0, 112, 0.40);
+    }
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    --page-background: #FFF1F7;
+    --text-color: #353430;
+
+    --accent-color: #FF8DCB;
+    --accent-text-color: #353430;
+
+    --decoration-color: #FFC2E6;
+
+    --button-border-hover: rgba(255, 0, 112, 0.40);
+
+    background-image: url("../images/cover-image-light.png");
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
 }
+
+.page.theme_light .header,
+.page.theme_light .concentration__title,
+.page.theme_light .reduce-concentration__title,
+.page.theme_light .best-concentration__title,
+.page.theme_light .footer {
+    color: var(--accent-text-color)
+}
+
+.page.theme_light .header__theme-menu-button_active {
+    border-color: var(--accent-text-color);
+}
+
+.page.theme_light .header__decorated-element {
+    visibility: hidden;
+}
+
