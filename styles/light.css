@@ -12,9 +12,6 @@
         --text-color: #353430;
 
         --accent-color: #353430;
-        /*//#FF8DCB;*/
-
-
         --accent-text-color: #353430;
 
         --decoration-color: #FFC2E6;
@@ -40,20 +37,3 @@
       чем стили в медиазапросе предпочтений пользователя
     */
 }
-
-.page.theme_light .header,
-.page.theme_light .concentration__title,
-.page.theme_light .reduce-concentration__title,
-.page.theme_light .best-concentration__title,
-.page.theme_light .footer {
-    color: var(--accent-text-color)
-}
-
-.page.theme_light .header__theme-menu-button_active {
-    border-color: var(--accent-text-color);
-}
-
-.page.theme_light .header__decorated-element {
-    visibility: hidden;
-}
-
